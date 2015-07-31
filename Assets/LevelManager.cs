@@ -7,4 +7,8 @@ public class LevelManager : MonoBehaviour {
 		Application.LoadLevel (level); 
 		Debug.Log (level + " loaded!"); 
 	}
+
+	public void QuitRequest(){
+		print ("Quit requested."); 
+	}
 }
