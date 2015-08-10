@@ -11,4 +11,8 @@ public class LevelManager : MonoBehaviour {
 	public void QuitRequest(){
 		print ("Quit requested."); 
 	}
+
+	public void LoadNextLevel(){
+		Application.LoadLevel(Application.loadedLevel+1); 
+	}
 }
