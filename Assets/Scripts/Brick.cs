@@ -4,13 +4,14 @@ using System.Collections;
 public class Brick : MonoBehaviour {
 
 	public int maxHits; 
+	public Sprite[] hitSprites; 
 	private int timesHit; 
 	private LevelManager levelManager; 
 
 	// Use this for initialization
 	void Start () {
-		levelManager = GameObject.FindObjectOfType<LevelManager> (); 
 		timesHit = 0; 
+		levelManager = GameObject.FindObjectOfType<LevelManager> (); 
 	}
 	
 	// Update is called once per frame
@@ -22,11 +23,18 @@ public class Brick : MonoBehaviour {
 		timesHit++; 
 		if (this.timesHit >= this.maxHits) {
 			Destroy (gameObject); 
+		} else {
+			LoadSprites(); 	
 		}
 	}
 
 	//TODO Remove this method once we can actually win. 
 	void SimulateWin(){
 		levelManager.LoadNextLevel (); 
+	}
+
+	void LoadSprites(){
+		int spriteIndex = timesHit - 1; 
+		this.GetComponent<SpriteRenderer> ().sprite = hitSprites [spriteIndex]; 
 	}
 }
