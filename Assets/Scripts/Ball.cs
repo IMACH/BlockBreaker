@@ -27,6 +27,13 @@ public class Ball : MonoBehaviour {
 					this.rigidbody2D.velocity = new Vector2(2f,10f); 
 			}
 		}
+	}
+
+	void OnCollisionEnter2D(Collision2D collision){
+	//Ball does not trigger sound when hitting breakable bricks? not sure why 
+		if(hasStarted == true){
+			audio.Play(); 
 		}
+	}
 
 }

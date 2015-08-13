@@ -1,11 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Brick.cs">
     <Files>
-      <File FileName="..\Steal\Unity\Assets\StealAssets\Script\Rank.cs" Line="1" Column="1" />
-      <File FileName="..\Steal\Unity\Assets\StealAssets\Script\ShowInfo.cs" Line="1" Column="1" />
-      <File FileName="..\Steal\Unity\Assets\Plugins\Editor\FingerGestures\PointCloudGestureTemplateInspector.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Brick.cs" Line="10" Column="2" />
+      <File FileName="Assets\Scripts\Brick.cs" Line="23" Column="4" />
+      <File FileName="Assets\Scripts\LevelManager.cs" Line="11" Column="28" />
+      <File FileName="Assets\Scripts\Ball.cs" Line="5" Column="2" />
+      <File FileName="Assets\Scripts\LoseCollider.cs" Line="19" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
