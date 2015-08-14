@@ -31,8 +31,11 @@ public class Ball : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D collision){
 	//Ball does not trigger sound when hitting breakable bricks? not sure why 
-		if(hasStarted == true){
-			audio.Play(); 
+		if(hasStarted){
+			if(collision.gameObject.tag == "Breakable"){
+				print ("This is a breakable brick"); 
+			} else 
+				audio.Play(); 
 		}
 	}
 
